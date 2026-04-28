@@ -119,11 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &258935796 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5200176812560497060, guid: ff7e73aa67749c44eaad547f559f3c63, type: 3}
-  m_PrefabInstance: {fileID: 1812040584}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &664517484 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3503230331010298774, guid: 13aca049c67820644ba390980277e1e1, type: 3}
@@ -160,7 +155,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3503230330313880170, guid: 13aca049c67820644ba390980277e1e1, type: 3}
   m_PrefabInstance: {fileID: 3503230331243135894}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1812040584
+--- !u!1001 &1808580461
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -168,6 +163,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1218753020}
     m_Modifications:
+    - target: {fileID: -3313242853669878927, guid: ff7e73aa67749c44eaad547f559f3c63, type: 3}
+      propertyPath: fox
+      value: 
+      objectReference: {fileID: 1971008218}
     - target: {fileID: 5200176812560451266, guid: ff7e73aa67749c44eaad547f559f3c63, type: 3}
       propertyPath: m_Name
       value: Platform 1
@@ -178,11 +177,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5200176812560497060, guid: ff7e73aa67749c44eaad547f559f3c63, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 1.33
       objectReference: {fileID: 0}
     - target: {fileID: 5200176812560497060, guid: ff7e73aa67749c44eaad547f559f3c63, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5200176812560497060, guid: ff7e73aa67749c44eaad547f559f3c63, type: 3}
       propertyPath: m_LocalRotation.w
@@ -248,6 +247,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1939497791 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5200176812560497060, guid: ff7e73aa67749c44eaad547f559f3c63, type: 3}
+  m_PrefabInstance: {fileID: 1808580461}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1971008218 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3501913615090349002, guid: 13aca049c67820644ba390980277e1e1, type: 3}
@@ -314,7 +318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoxMovement
   velocity: 10
-  jumpForce: 20000
+  jumpForce: 30000
 --- !u!1001 &3503230331243135894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -928,7 +932,7 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3503230330313880170, guid: 13aca049c67820644ba390980277e1e1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 258935796}
+      addedObject: {fileID: 1939497791}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3501913615090349002, guid: 13aca049c67820644ba390980277e1e1, type: 3}
       insertIndex: -1
