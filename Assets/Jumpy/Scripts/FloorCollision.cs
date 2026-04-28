@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class FloorCollision : MonoBehaviour
 {
-    [SerializeField] private GameObject fox;
+    public GameObject fox;
     private float oldFoxY = 0;
     private float newFoxY = Mathf.NegativeInfinity;
 
