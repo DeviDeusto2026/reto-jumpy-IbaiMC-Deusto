@@ -8,11 +8,11 @@ public class FoxMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        checkMovement();
-        checkJump();
+        CheckMovement();
+        CheckJump();
     }
 
-   void checkMovement()
+   void CheckMovement()
     {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
@@ -25,7 +25,7 @@ public class FoxMovement : MonoBehaviour
         }
     }
 
-   void checkJump()
+   void CheckJump()
    {
         if (canJump && Input.GetKeyDown(KeyCode.UpArrow))
         {

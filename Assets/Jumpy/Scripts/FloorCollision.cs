@@ -13,9 +13,9 @@ public class FloorCollision : MonoBehaviour
     }
     void Update()
     {
-        checkFox();
+        CheckFox();
     }
-    void checkFox()
+    void CheckFox()
     {
         newFoxY = fox.transform.position.y;
 

@@ -13,9 +13,9 @@ public class PlataformSpawner : MonoBehaviour
     
     private void Start()
     {
-        spawnPlatforms();
+        SpawnPlatforms();
     }
-    void spawnPlatforms()
+    void SpawnPlatforms()
     {
         Vector3 position = new Vector3(0, inicialY, 0);
         float x;
