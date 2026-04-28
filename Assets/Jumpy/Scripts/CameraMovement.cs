@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraMovement : MonoBehaviour
 {
@@ -34,6 +35,7 @@ public class CameraMovement : MonoBehaviour
     }
     void Lose()
     {
-        Debug.Log("HAS PERDIDO");
+        //Debug.Log("HAS PERDIDO");
+        SceneManager.LoadScene("LoseScreen");
     }
 }

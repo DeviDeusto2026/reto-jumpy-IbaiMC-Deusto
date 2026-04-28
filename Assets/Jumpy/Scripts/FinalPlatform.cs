@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FinalPlatform : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class FinalPlatform : MonoBehaviour
 
     void Win()
     {
-        Debug.Log("HAS GANADO");
+        //Debug.Log("HAS GANADO");
+        SceneManager.LoadScene("WinScreen");
     }
 }
