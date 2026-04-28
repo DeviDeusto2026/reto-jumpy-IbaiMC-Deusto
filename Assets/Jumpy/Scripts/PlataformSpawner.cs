@@ -46,5 +46,6 @@ public class PlataformSpawner : MonoBehaviour
         newPlatform = Instantiate(finalPlatform);
         newPlatform.transform.position = position;
         newPlatform.GetComponent<FloorCollision>().fox = fox;
+        newPlatform.GetComponent<FinalPlatform>().fox = fox;
     }
 }
