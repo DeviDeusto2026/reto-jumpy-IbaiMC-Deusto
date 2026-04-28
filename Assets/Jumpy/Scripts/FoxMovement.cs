@@ -6,7 +6,7 @@ public class FoxMovement : MonoBehaviour
     [SerializeField] private float jumpForce;
     private bool canJump = true;
 
-    void Update()
+    void FixedUpdate()
     {
         checkMovement();
         checkJump();
@@ -27,10 +27,10 @@ public class FoxMovement : MonoBehaviour
 
    void checkJump()
    {
-        if (canJump && Input.GetKeyDown(KeyCode.Space))
+        if (canJump && Input.GetKeyDown(KeyCode.UpArrow))
         {
             Vector3 jumpVector = Vector3.up * jumpForce * Time.deltaTime;
-            this.GetComponent<Rigidbody>().AddForce(jumpVector);
+            this.GetComponent<Rigidbody>().AddForce(jumpVector, ForceMode.VelocityChange);
         }
     }
 
@@ -39,6 +39,7 @@ public class FoxMovement : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
             canJump = true;
+            this.GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
         }
     }
 
